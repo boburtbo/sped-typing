@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5oy 7-dars</title>
+  </head>
+  <body>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">×</span>
+        <p>Oyinni boshlashga tayormisiz</p>
+      </div>
+    </div>
+
+    <style>
+
+                  html,body{
+                    font-family: sans-serif 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+      width: 100%;
+      align-items: center;
+      height: 100%;
+
+                  }
+
+                  .modal {
+                    display: none;
+                    position: fixed;
+                    z-index: 1;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    overflow: auto;
+                    background-color: rgb(0, 0, 0);
+                    background-color: rgba(0, 0, 0, 0.4); /
+                  }
+
+
+                  .modal-content {
+                    background-color: #fefefe;
+                    margin: 15% auto;
+                    padding: 20px;
+                    border: 1px solid #888;
+                    width: 50%;
+                  }
+
+                  .close {
+                    color: #aaa;
+                    float: right;
+                    font-size: 28px;
+                    font-weight: bold;
+                  }
+
+                  .close:hover,
+                  .close:focus {
+                    color: black;
+                    text-decoration: none;
+                    cursor: pointer;
+                  }
+
+                  .header {
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    background-color:  bisque;
+                    margin: 0 auto;
+                    width: 50%;
+                    height: 50%;
+                    border-radius: 50px;
+
+                  }
+                  .start{
+                    cursor: pointer;
+                    background-color: chartreuse;
+             width: 10%;
+             border: 50px;
+             border-radius: 5em;
+
+                  }
+                  .start:hover{
+                    background-color: bisque;
+                    color: rgb(190, 88, 184);
+                  }
+                  .input_co{
+                    background-color: bisque;
+                  }
+    </style>
+    <div class="header">
+      <h3 id="random">apple</h3>
+      <div id="time"></div>
+      <input class="input_co" id="random_word_input" type="text" />
+
+      <p>Score: <span id="user__score">0</span></p>
+      <p>Score: <span id="user__time">10s</span></p>
+      <button class="start" id="myBtn">start</button>
+      <script type="module" src="./js/app.js"></script>
+    </div>
+  </body>
+</html>
